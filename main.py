@@ -20,4 +20,5 @@ if __name__ == "__main__":
             result[name] = [hours]
 
     for name in result.keys():
-        print(f"{name} : { ', '.join(map(str, result[name]))};  sum: {sum(result[name])}")
+        hours_ = ', '.join(map(str, result[name]))
+        print(f"{name} : {hours_};  sum: {sum(result[name])}")
